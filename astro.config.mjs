@@ -15,9 +15,9 @@ export default defineConfig({
 					label: 'Docs',
 					items: [
 						{ label: 'Introduction', link: '/' },
-						{ label: 'Getting started', link: '/getting-started/' },
-						{ label: 'Setup Guide', link: '/setup/' },
-						{ label: 'FAQ', link: '/faq/' },
+						{ label: 'Getting started', link: '/getting-started' },
+						{ label: 'Setup Guide', link: '/setup' },
+						{ label: 'FAQ', link: '/faq' },
 					],
 				},
 			],
