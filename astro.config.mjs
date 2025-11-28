@@ -4,8 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://kaif223.github.io',
-	base: '/AstroDocs',
+	site: 'https://kaif223.github.io/AstroDocs',
 	integrations: [
 		starlight({
 			title: 'My Docs',
