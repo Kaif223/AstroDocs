@@ -1,0 +1,146 @@
+---
+title: "[Feature/API Name] Reference"
+description: "Complete reference documentation for [Feature/API Name] including parameters, examples, and return values."
+---
+
+# [Feature/API Name] Reference
+
+Quick reference for [Feature/API Name] functionality.
+
+## Overview
+
+[Brief description of what this feature/API does]
+
+**Version**: [Current version]  
+**Status**: [Stable/Beta/Deprecated]
+
+## Quick Start
+
+```javascript
+// Most common usage example
+const result = apiCall({
+    parameter1: 'value1',
+    parameter2: 'value2'
+});
+```
+
+## Parameters
+
+| Parameter | Type | Required | Description | Default |
+|-----------|------|----------|-------------|---------|
+| `param1` | `string` | ✅ | Description of parameter 1 | - |
+| `param2` | `number` | ❌ | Description of parameter 2 | `0` |
+| `param3` | `boolean` | ❌ | Description of parameter 3 | `false` |
+
+## Return Values
+
+### Success Response
+```json
+{
+    "status": "success",
+    "data": {
+        "id": "12345",
+        "result": "operation completed"
+    }
+}
+```
+
+### Error Response
+```json
+{
+    "status": "error", 
+    "message": "Error description",
+    "code": 400
+}
+```
+
+## Examples
+
+### Basic Example
+```javascript
+// Simple usage
+const basicResult = featureCall('simple-value');
+console.log(basicResult);
+```
+
+### Advanced Example
+```javascript
+// Advanced usage with multiple options
+const advancedResult = featureCall({
+    mode: 'advanced',
+    options: {
+        timeout: 5000,
+        retry: true,
+        callback: (result) => {
+            console.log('Callback result:', result);
+        }
+    }
+});
+```
+
+### Error Handling Example
+```javascript
+try {
+    const result = featureCall(parameters);
+    // Handle success
+} catch (error) {
+    console.error('Operation failed:', error.message);
+    // Handle error
+}
+```
+
+## Configuration Options
+
+### Option Set A: [Category Name]
+| Option | Type | Description |
+|--------|------|-------------|
+| `option1` | `string` | [Description] |
+| `option2` | `array` | [Description] |
+
+### Option Set B: [Category Name]  
+| Option | Type | Description |
+|--------|------|-------------|
+| `option3` | `object` | [Description] |
+| `option4` | `function` | [Description] |
+
+## Error Codes
+
+| Code | Description | Resolution |
+|------|-------------|------------|
+| `E001` | [Error description] | [How to fix] |
+| `E002` | [Error description] | [How to fix] |
+| `E003` | [Error description] | [How to fix] |
+
+## Limitations
+
+- [Limitation 1]
+- [Limitation 2] 
+- [Limitation 3]
+
+## Browser Support
+
+| Browser | Version | Status |
+|---------|---------|--------|
+| Chrome | 80+ | ✅ Supported |
+| Firefox | 75+ | ✅ Supported |
+| Safari | 13+ | ✅ Supported |
+| Edge | 80+ | ✅ Supported |
+
+## Migration Guide
+
+### From v1.x to v2.x
+[Migration instructions if applicable]
+
+### Breaking Changes
+- [Change 1]: [Impact and solution]
+- [Change 2]: [Impact and solution]
+
+## See Also
+
+- [Related API Reference](./related-api)
+- [How-to Guide](../guides/how-to-use-feature)
+- [FAQ](../faq#feature-questions)
+
+---
+
+*API Version: [X.X.X] | Last Updated: [Date]*
