@@ -12,11 +12,28 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Kaif223/AstroDocs' }],
 			sidebar: [
 				{
-					label: 'Docs',
+					label: 'Getting Started',
 					items: [
 						{ label: 'Introduction', link: '/' },
 						{ label: 'Getting started', link: '/getting-started' },
 						{ label: 'Setup Guide', link: '/setup' },
+					],
+				},
+				{
+					label: 'Guides & Tutorials',
+					autogenerate: { directory: 'guides' },
+				},
+				{
+					label: 'All Documentation',
+					autogenerate: { directory: '.' },
+				},
+				{
+					label: 'Reference',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Help',
+					items: [
 						{ label: 'FAQ', link: '/faq' },
 					],
 				},
