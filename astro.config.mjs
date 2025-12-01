@@ -17,25 +17,16 @@ export default defineConfig({
 						{ label: 'Introduction', link: '/' },
 						{ label: 'Getting started', link: '/getting-started' },
 						{ label: 'Setup Guide', link: '/setup' },
+						{ label: 'FAQ', link: '/faq' },
 					],
 				},
 				{
-					label: 'Guides & Tutorials',
+					label: 'User Guides',
 					autogenerate: { directory: 'guides' },
-				},
-				{
-					label: 'All Documentation',
-					autogenerate: { directory: '.' },
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
-				},
-				{
-					label: 'Help',
-					items: [
-						{ label: 'FAQ', link: '/faq' },
-					],
 				},
 			],
 		}),
